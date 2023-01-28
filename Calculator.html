@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Carl calculator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Carl calculator</font>
+</center></td></tr></table>
+<pre><span class="s0">def calculator():</span>
+    <span class="s0">while True:</span>
+        <span class="s0">operation = input(&quot;Enter an operation (+, -, *, /): &quot;)</span>
+        <span class="s0">if operation not in [&quot;+&quot;, &quot;-&quot;, &quot;*&quot;, &quot;/&quot;]:</span>
+            <span class="s0">print(&quot;Invalid operation. Please try again.&quot;)</span>
+            <span class="s0">continue</span>
+        <span class="s0">num1 = float(input(&quot;Enter the first number: &quot;))</span>
+        <span class="s0">num2 = float(input(&quot;Enter the second number: &quot;))</span>
+        <span class="s0">if operation == &quot;+&quot;:</span>
+            <span class="s0">print(&quot;The result is: &quot;, num1 + num2)</span>
+        <span class="s0">elif operation == &quot;-&quot;:</span>
+            <span class="s0">print(&quot;The result is: &quot;, num1 - num2)</span>
+        <span class="s0">elif operation == &quot;*&quot;:</span>
+            <span class="s0">print(&quot;The result is: &quot;, num1 * num2)</span>
+        <span class="s0">elif operation == &quot;/&quot;:</span>
+            <span class="s0">print(&quot;The result is: &quot;, num1 / num2)</span>
+
+<span class="s0">calculator()</span>
+</pre>
+</body>
+</html>
